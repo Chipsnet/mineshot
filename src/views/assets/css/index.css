@@ -21,3 +21,56 @@ footer {
 footer p{
     margin: 2px;
 }
+
+input {
+    display: block;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    resize: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+	border: 1px solid #44d5da;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(86, 189, 236, 0.5);
+}
+
+a:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+input[type='text']:focus {
+	border: 1px solid #44d5da;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(86, 189, 236, 0.5);
+}
