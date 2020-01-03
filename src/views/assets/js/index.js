@@ -5,8 +5,8 @@ const appendLog = (log_data) => $('#log').append(log_data + "\n").scrollTop(9e9)
 
 let status = false;
 
-
 $(() => appendLog('準備完了'));
+
 
 const OpenDirectory = () => dialog.showOpenDialog(null, {
     properties: ['openDirectory'],
