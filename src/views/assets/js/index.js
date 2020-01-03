@@ -5,13 +5,10 @@ window.$ = require('./assets/js/jquery-3.4.1.min.js');
 var status = false;
 
 const AddLog = (log_data) => {
-    log = window.$('#log').val()
-    window.$('#log').val(log+log_data+'\n')
-    window.$("#log").scrollTop( window.$("#log")[0].scrollHeight );
+    window.$('#log').append(log_data+'\n').scrollTop(9e9);
 }
 
 window.$(() => {
-    
     AddLog('準備完了')  
 })
 
