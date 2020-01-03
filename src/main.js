@@ -1,23 +1,17 @@
-const electron = require('electron');
-const app = electron.app;
-const browserWindow = electron.BrowserWindow;
+const chain = function c(o){return new Proxy(o,{get:(t,p)=>(...a)=>(t[p](...a),c(t))})};
+const { app, browserWindow } = require('electron');
 
 let mainWindow = null;
 
 app.on('ready', () => {
-    mainWindow = new browserWindow({
+    chain(mainWindow = new browserWindow({
         width: 700,
         height: 500,
-        webPreferences: {
-            nodeIntegration: true
-        }
-    });
+        webPreferences: { nodeIntegration: true }
+    }))
+    .loadFile('./views/index.html')
+    .setMenu(null)
+    .on('closed', () => mainWindow = null);
 
-    mainWindow.loadURL(`file://${__dirname}/views/index.html`)
-    mainWindow.setMenu(null)
     mainWindow.webContents.openDevTools();
-
-    mainWindow.on('closed', () => {
-        mainWindow = null;
-    });
 });
