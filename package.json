@@ -3,5 +3,14 @@
     "chokidar": "3.5.1",
     "electron": "11.2.3",
     "eslint": "7.20.0"
+  },
+  "name": "mineshot",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": "https://github.com/Chipsnet/mineshot.git",
+  "author": "Minato Minami <doronomori660@outlook.jp>",
+  "license": "MIT",
+  "scripts": {
+      "start": "electron ."
   }
 }
