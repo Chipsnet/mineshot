@@ -9,7 +9,7 @@ app.on('ready', () => {
         height: 500,
         webPreferences: { nodeIntegration: true }
     }))
-    .loadFile('./views/index.html')
+    .loadFile('./src/views/index.html')
     .setMenu(null)
     .on('closed', () => mainWindow = null);
 
