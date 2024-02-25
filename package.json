@@ -2,7 +2,7 @@
   "dependencies": {
     "chokidar": "3.5.1",
     "electron": "11.2.3",
-    "eslint": "7.20.0"
+    "eslint": "8.57.0"
   },
   "name": "mineshot",
   "version": "1.0.0",
