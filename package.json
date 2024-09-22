@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "chokidar": "3.5.1",
+    "chokidar": "4.0.1",
     "electron": "11.2.3",
     "eslint": "7.20.0"
   },
